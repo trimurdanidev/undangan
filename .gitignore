@@ -3,5 +3,5 @@ SECURITY.md
 node_modules
 package-lock.json
 dist
-publics
+public
 assets
