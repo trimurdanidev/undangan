@@ -13,8 +13,8 @@
         "lint:js": "eslint js",
         "lint:css": "stylelint css",
         "lint:html": "htmlhint **/*.html",
-        "dev": "npx esbuild js/*.js --bundle --outdir=dist --servedir=. --serve=8080",
-        "build": "npx esbuild js/*.js --bundle --outfile=dist/bundle.js && cp index.html dist/ && cp -r css dist/ && cp -r assets dist/",
+        "dev": "npx esbuild js/guest.js --bundle --outdir=dist --servedir=. --serve=8080",
+        "build": "npx esbuild js/guest.js --bundle --outfile=dist/bundle.js && xcopy /E /I /Y index.html dist\\ && xcopy /E /I /Y css dist\\css\\ && xcopy /E /I /Y assets dist\\assets\\",
         "build:public": "npm run build && node -e \"const fs = require('fs-extra'); fs.ensureDir('public').then(() => Promise.all(['assets', 'css', 'dist', 'index.html', 'dashboard.html'].map((f) => fs.copy(f, 'public/' + f)))).then(() => console.log('✅ Successfully!'));\""
     },
     "dependencies": {
