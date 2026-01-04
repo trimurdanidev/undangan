@@ -4,4 +4,4 @@ node_modules
 package-lock.json
 # dist
 public
-assets
+# assets
