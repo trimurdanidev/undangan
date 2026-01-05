@@ -256,7 +256,7 @@ export const guest = (() => {
         const data = new URLSearchParams({
             action: 'TEMPLATE',
             text: 'Walimatul Khitan',
-            dates: `${formatDate('2025-01-18 10:00')} - Selesai`,
+            dates: `${formatDate('2026-01-18 10:00')} - Selesai`,
             details: 'Hafdzal Abdurrahman Faiz. Putra Bapak Tri Murdani & Ibu Febri Amelia Haerani',
             location: 'RT 005 RW 001, Kp. Pondok Benda, Kel. Jatirasa, Kec. Jatiasih, Bekasi 17423.',
             ctz: config.get('tz'),
